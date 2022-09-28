@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo.css">
+    <title>Média das Notas</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <table id="tableContent" border="1" class="table" align="center">
+                <thead>
+                    <tr>
+                        <th>Disciplina</th>
+                        <th>1° Bimestre</th>
+                        <th>2° Bimestre</th>
+                        <th>3° Bimestre</th>
+                        <th>4° Bimestre</th>
+                        <th>Média Anual</th>
+                        <th>Exame</th>
+                        <th>Nota do Exame</th>
+                        <th>Resultado Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Português</td>
+                        <td>
+                            <input id="port_nota1" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="port_nota2" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="port_nota3" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="port_nota4" type="number" value=""/>
+                        </td>
+                        <td> <label id="port_mediaAnual"></label> </td>
+                        <td> <label id="port_exame"></label> </td>
+                        <td> <input id="port_exame_nota" type="number" value="" hidden/> </td>
+                        <td> <span><label id="port_resultado"></label></span> </td>
+                    </tr>
+                    <tr>
+                        <td>Matemática</td>
+                        <td>
+                            <input id="mat_nota1" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="mat_nota2" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="mat_nota3" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="mat_nota4" type="number" value=""/>
+                        </td>
+                        <td> <label id="mat_mediaAnual"></label> </td>
+                        <td> <label id="mat_exame"></label> </td>
+                        <td> <input id="mat_exame_nota" type="number" value="" hidden/> </td>
+                        <td> <span><label id="mat_resultado"></label></span> </td>
+                    </tr>
+                    <tr>
+                        <td>História</td>
+                        <td>
+                            <input id="hist_nota1" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="hist_nota2" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="hist_nota3" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="hist_nota4" type="number" value=""/>
+                        </td>
+                        <td> <label id="hist_mediaAnual"></label> </td>
+                        <td> <label id="hist_exame"></label> </td>
+                        <td> <input id="hist_exame_nota" type="number" value="" hidden/> </td>
+                        <td> <span><label id="hist_resultado"></label></span> </td>
+                    </tr>
+                    <tr>
+                        <td>Geografia</td>
+                        <td>
+                            <input id="geo_nota1" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="geo_nota2" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="geo_nota3" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="geo_nota4" type="number" value=""/>
+                        </td>
+                        <td> <label id="geo_mediaAnual"></label> </td>
+                        <td> <label id="geo_exame"></label> </td>
+                        <td> <input id="geo_exame_nota" type="number" value="" hidden/> </td>
+                        <td> <span><label id="geo_resultado"></label></span> </td>
+                    </tr>
+                    <tr>
+                        <td>Inglês</td>
+                        <td>
+                            <input id="ing_nota1" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="ing_nota2" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="ing_nota3" type="number" value=""/>
+                        </td>
+                        <td>
+                            <input id="ing_nota4" type="number" value=""/>
+                        </td>
+                        <td> <label id="ing_mediaAnual"></label> </td>
+                        <td> <label id="ing_exame"></label> </td>
+                        <td> <input id="ing_exame_nota" type="number" value="" hidden/> </td>
+                        <td> <span><label id="ing_resultado"></label></span> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="9" align="right">
+                            <button id="btnCalcularMedias" type="button">Calcular Medias</button> 
+                            <button id="btnFinalizar" type="button">Finalizar</button>
+                            <button id="btnLimpar" type="button" onclick="document.location.reload(true);" >Limpar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </form>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
