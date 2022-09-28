@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Rei dos games</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/album.css" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container d-flex justify-content-between">
+                    <a href="index.html" class="navbar-brand d-flex align-items-center">
+                        <img src="./assets/header/joystick.svg" alt="Joystick" class="mr-2"/>
+                        <strong>Rei do games</strong>
+                    </a>
+                    <button id="fltr_all" class="navbar-toggler" type="button" data-toggle="tooltip" data-placement="bottom" title="Mostrar todos os jogos">
+                        <img class="p-1" src="./assets/header/list.svg" alt="list icon"/>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main role="main">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="text-center mb-3">
+                                <img class="game-image rounded" src="" alt="" />
+                            </div>
+                            <dl class="row">
+                                <dt class="col-sm-4">Desenvolvedor</dt>
+                                <dd class="developer col-sm-8"></dd>
+
+                                <dt class="col-sm-4">Publisher</dt>
+                                <dd class="publisher col-sm-8"></dd>
+
+                                <dt class="col-sm-4">Lançamento</dt>
+                                <dd class="release-date col-sm-8"></dd>
+                                
+                                <dt class="col-sm-4">Descrição</dt>
+                                <dd class="description col-sm-8"></dd>
+                                
+                                <dt class="col-sm-4">Gênero</dt>
+                                <dd class="genre col-sm-8"></dd>
+
+                                <dt class="col-sm-4">Plataforma</dt>
+                                <dd class="platform col-sm-8"></dd>
+                              </dl>
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <a class="game-page btn btn-primary" href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Acessar pagina do jogo">Página do Jogo</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <h1 class="jumbotron-heading">Album de jogos</h1>
+                    <p class="lead text-muted">A coleção de jogos abaixo é apresentada conforme o filtro selecionado, experimente!</p>
+                    <p>
+                        <a id="fltr_zombie" data-id="zombie" href="#" class="btn btn-primary my-2">Zombie</a>
+                        <a id="fltr_shooter" data-id="shooter" href="#" class="btn btn-primary my-2">Tiro</a>
+                        <a id="fltr_race" data-id="racing" href="#" class="btn btn-primary my-2">Corrida</a>
+                        <a id="fltr_strategy" data-id="strategy" href="#" class="btn btn-primary my-2">Estratégia</a>
+                        <a id="fltr_mmorpg" data-id="mmorpg" href="#" class="btn btn-primary my-2">MMORPG</a>
+                    </p>
+                </div>
+            </section>
+
+            <div class="album py-5 bg-light">
+                <div id="grid-all-games" class="container">
+                    <div class="row"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-muted">
+            <div class="container">
+                <p class="float-right">
+                <a href="#">Voltar ao topo</a>
+                </p>
+                <p>Site do Freetogame, acesse o <a href="https://www.freetogame.com" target="_blank"><em>link</em></a>.</p>
+                <p>
+                    As informações dos jogos são disponibilizadas por uma API gratuita do Freetogame, 
+                    mais informações a respeito de como utilizar a API, 
+                    acesse o <a href="https://www.freetogame.com/api-doc" target="_blank"><em>link</em></a>.
+                </p>
+            </div>
+        </footer>
+
+        <script src="./js/jquery-3.3.1.slim.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
